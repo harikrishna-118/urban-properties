@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+.up-compare-page {font-family:"Manrope",sans-serif;color:#1c1c20;background:#f6f6f7;min-height:75vh}
+.up-compare-shell {width:min(1200px,calc(100% - 40px));margin:auto}
+.up-compare-hero {background:linear-gradient(125deg,#090909,#26262a);color:white;padding:66px 0 60px;border-bottom:3px solid #ff891c}
+.up-compare-eyebrow {color:#ffab51;font-size:12px;font-weight:800;letter-spacing:2px}
+.up-compare-hero h1 {font-size:clamp(32px,4.5vw,55px);margin:12px 0;font-weight:800;line-height:1.15}
+.up-compare-hero h1 em {font-style:normal;color:#ff9b30}
+.up-compare-hero p {color:#d0d0d4;font-size:15px;max-width:570px;line-height:1.7}
+.up-compare-count {display:inline-flex;align-items:center;gap:9px;margin-top:18px;padding:10px 15px;border:1px solid #ff891c66;border-radius:10px;color:#ffbb76;font-weight:700}
+.up-compare-main {padding:42px 0 85px}
+.up-compare-toolbar {display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:25px}
+.up-compare-toolbar h2 {font-size:25px;margin:0 0 7px}
+.up-compare-toolbar p {margin:0;color:#696970;font-size:14px}
+.up-compare-toolbar-actions {display:flex;gap:10px;flex-wrap:wrap}
+.up-compare-toolbar-actions a,.up-compare-toolbar-actions button,.up-compare-empty a {display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border:1px solid #e2e2e6;border-radius:9px;background:white;color:#222;font:700 13px Manrope,sans-serif;text-decoration:none;cursor:pointer}
+.up-compare-toolbar-actions a,.up-compare-empty a {background:#ff891c;border-color:#ff891c;color:#111}
+.up-compare-empty {display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px;border:1px solid #e8e8ec;border-radius:16px;background:white}
+.up-compare-empty>svg {color:#ff891c}
+.up-compare-empty h3 {font-size:24px;margin:16px 0 4px}
+.up-compare-empty p {color:#6d6d75;margin-bottom:24px}
+.up-compare-scroll {width:100%;overflow-x:auto;border-radius:15px;border:1px solid #e7e7eb;background:white}
+.up-compare-table {border-collapse:collapse;width:100%;min-width:660px;table-layout:fixed}
+.up-compare-table th,.up-compare-table td {border-right:1px solid #ebebef;border-bottom:1px solid #ebebef;padding:18px;vertical-align:top;text-align:left;overflow-wrap:anywhere}
+.up-compare-table tr>:last-child {border-right:0}
+.up-compare-table tbody tr:last-child>* {border-bottom:0}
+.up-compare-table thead th {width:260px}
+.up-compare-table thead th.up-compare-label {width:160px;background:#f8f8fa;color:#6e6e75;font-size:14px}
+.up-compare-table tbody th {background:#f8f8fa;font-size:13px;font-weight:800}
+.up-compare-table tbody td {font-size:14px;line-height:1.65;color:#45454b}
+.up-compare-property {position:relative}
+.up-compare-property img {width:100%;height:145px;object-fit:cover;border-radius:9px}
+.up-compare-remove {position:absolute;top:7px;right:7px;display:grid;place-items:center;width:30px;height:30px;border:0;border-radius:50%;background:white;color:#333;cursor:pointer}
+.up-compare-property>span {display:block;margin-top:12px;color:#c36a0c;font-size:11px;font-weight:800;text-transform:uppercase}
+.up-compare-property h3 {font-size:15px;margin:7px 0;line-height:1.4}
+.up-compare-property p {display:flex;align-items:center;gap:5px;font-size:12px;color:#75757a;margin:6px 0 10px}
+.up-compare-property strong {display:block;color:#e27607;font-size:18px}
+.up-compare-view {display:inline-flex;align-items:center;gap:6px;color:#171717;text-decoration:none;font-size:12px;font-weight:800;margin-top:14px}
+.up-compare-button {display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid #ff891c;border-radius:8px;background:#fff7ef;color:#ad5900;font:800 12px Manrope,sans-serif;padding:9px 11px;cursor:pointer}
+.up-compare-button.is-selected {background:#ff891c;color:#151515}
+.up-compare-button:disabled {opacity:.5;cursor:not-allowed}
+.up-compare-buy-actions {display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.up-compare-buy-actions .buy-view-btn {flex:1}
+.up-compare-details-action {margin-left:8px}
+.up-compare-nav {display:inline-flex!important;align-items:center;gap:6px}
+.up-compare-nav-count {background:#ff891c;color:#121212;border-radius:100px;padding:2px 6px;font-size:11px;font-weight:800}
+@media(max-width:1450px){.site-header .nav-menu.nav-open {justify-content:flex-start!important;align-items:stretch;overflow-y:auto}}
+@media(max-width:767px){.up-compare-shell{width:calc(100% - 28px)}.up-compare-hero{padding:44px 0}.up-compare-main{padding-top:28px}.up-compare-toolbar{align-items:flex-start;flex-direction:column}.up-compare-table thead th{width:225px}.up-compare-table thead th.up-compare-label{width:115px}.up-compare-table th,.up-compare-table td{padding:12px}.up-compare-property img{height:125px}}

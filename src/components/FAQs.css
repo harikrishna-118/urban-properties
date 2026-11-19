@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+.sp-page {
+    font-family: Manrope, Arial, sans-serif;
+    background: #f6f7f9;
+    color: #17191e;
+    min-height: 75vh
+}
+
+.sp-page * {
+    box-sizing: border-box
+}
+
+.sp-page a {
+    text-decoration: none
+}
+
+.sp-page button,
+.sp-page input,
+.sp-page select,
+.sp-page textarea {
+    font: inherit
+}
+
+.sp-container {
+    width: min(100% - 44px, 1200px);
+    margin: auto
+}
+
+.sp-hero {
+    padding: 75px 0;
+    background: linear-gradient(120deg, #101114, #292b31);
+    color: white
+}
+
+.sp-eyebrow {
+    color: #ff9a41;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 11px
+}
+
+.sp-hero h1 {
+    font-size: clamp(34px, 4.4vw, 58px);
+    letter-spacing: -1.8px;
+    line-height: 1.15;
+    margin: 16px 0
+}
+
+.sp-hero p {
+    font-size: 14px;
+    color: #c8c9cf;
+    line-height: 1.85;
+    max-width: 680px
+}
+
+.sp-main {
+    padding: 48px 0 90px
+}
+
+.sp-card {
+    background: white;
+    border: 1px solid #e4e6eb;
+    border-radius: 15px;
+    padding: 25px
+}
+
+.sp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px
+}
+
+.sp-card h3 {
+    margin: 12px 0;
+    font-size: 17px
+}
+
+.sp-card p {
+    color: #747b85;
+    font-size: 12px;
+    line-height: 1.8
+}
+
+.sp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+    border-radius: 9px;
+    background: #17181c;
+    color: white;
+    padding: 13px 18px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer
+}
+
+.sp-btn:hover {
+    background: #ff8a1e;
+    color: #151515
+}
+
+.sp-muted {
+    color: #79808a;
+    font-size: 12px;
+    line-height: 1.8
+}
+
+.sp-input {
+    width: 100%;
+    border: 1px solid #dfe3e8;
+    border-radius: 9px;
+    padding: 13px;
+    background: white;
+    outline: none;
+    font-size: 13px
+}
+
+.sp-input:focus {
+    border-color: #ff8a1e;
+    box-shadow: 0 0 0 3px #ff8a1e1b
+}
+
+.sp-label {
+    display: grid;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 800
+}
+
+.sp-alert {
+    padding: 14px;
+    border-radius: 9px;
+    background: #fff5e9;
+    color: #88531c;
+    font-size: 12px;
+    line-height: 1.7
+}
+
+.sp-success {
+    padding: 14px;
+    border-radius: 9px;
+    background: #eaf7ef;
+    color: #23683e;
+    font-size: 12px;
+    line-height: 1.7
+}
+
+.sp-crumb {
+    margin-bottom: 24px;
+    font-size: 12px;
+    color: #858b94
+}
+
+.sp-crumb a {
+    color: #a86526
+}
+
+.sp-section-heading {
+    font-size: clamp(23px, 2.7vw, 35px);
+    letter-spacing: -1px;
+    margin: 10px 0 22px
+}
+
+@media(max-width:850px) {
+    .sp-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:600px) {
+    .sp-container {
+        width: calc(100% - 28px)
+    }
+
+    .sp-hero {
+        padding: 52px 0
+    }
+
+    .sp-grid {
+        grid-template-columns: 1fr
+    }
+
+    .sp-main {
+        padding: 30px 0 65px
+    }
+
+    .sp-card {
+        padding: 20px
+    }
+}
+
+.faq-hero {
+    background: linear-gradient(120deg, #17181b, #3a312a)
+}
+
+.faq-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0 16px;
+    max-width: 650px;
+    margin-bottom: 30px;
+    color: #ed872b
+}
+
+.faq-search input {
+    height: 52px;
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: none;
+    font-size: 13px
+}
+
+.faq-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 30px
+}
+
+.faq-categories {
+    align-self: start;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+    padding: 19px
+}
+
+.faq-categories h3 {
+    font-size: 14px;
+    margin: 0 0 15px
+}
+
+.faq-categories button {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #686e78;
+    font-size: 12px;
+    cursor: pointer
+}
+
+.faq-categories button.active {
+    background: #fff1e1;
+    color: #bd6719;
+    font-weight: 800
+}
+
+.faq-list h2 {
+    font-size: 25px;
+    margin: 0 0 22px
+}
+
+.faq-list h2 small {
+    color: #888;
+    font-size: 13px
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 11px
+}
+
+.faq-item>button {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 13px
+}
+
+.faq-item button span {
+    display: grid;
+    gap: 7px
+}
+
+.faq-item button small {
+    font-size: 10px;
+    color: #e48329;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.faq-item button svg {
+    color: #e48329;
+    flex-shrink: 0
+}
+
+.faq-item>p {
+    margin: 0;
+    padding: 0 20px 20px;
+    font-size: 12px;
+    color: #747b84;
+    line-height: 1.8
+}
+
+.faq-bottom {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #18191d;
+    color: #fff;
+    padding: 24px;
+    border-radius: 13px;
+    margin-top: 26px
+}
+
+.faq-bottom>svg {
+    color: #ff9c44
+}
+
+.faq-bottom>div {
+    flex: 1
+}
+
+.faq-bottom h3 {
+    margin: 0 0 7px;
+    font-size: 17px
+}
+
+.faq-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #bbb
+}
+
+.faq-bottom .sp-btn {
+    background: #ff8a1e;
+    color: #151515
+}
+
+@media(max-width:750px) {
+    .faq-layout {
+        grid-template-columns: 1fr
+    }
+
+    .faq-categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px
+    }
+
+    .faq-categories h3 {
+        width: 100%
+    }
+
+    .faq-categories button {
+        width: auto
+    }
+
+    .faq-bottom {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .faq-bottom .sp-btn {
+        width: 100%
+    }
+}

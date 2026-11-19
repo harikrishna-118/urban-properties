@@ -1,0 +1,2 @@
+import './PropertyCard.css';
+export default function PropertyCard({property:p}){return <article className="property-card"><img src={p.image} alt={p.title} loading="lazy"/><div className="property-card-body"><span className="tag">{p.badge}</span><h3>{p.title}</h3><p className="muted">📍 {p.location} · {p.category}</p><div className="property-meta"><span>{p.beds?p.beds+' Bedrooms':'Property'}</span><span>{p.area}</span></div><p className="property-price">{p.price}</p></div></article>}

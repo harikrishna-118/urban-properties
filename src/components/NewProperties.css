@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --urban-orange: #ff8a1e
+}
+
+.ux-page {
+    font-family: Manrope, Arial, sans-serif;
+    color: #191b21;
+    background: #f6f7f8;
+    min-height: 100vh
+}
+
+.ux-page * {
+    box-sizing: border-box
+}
+
+.ux-page a {
+    text-decoration: none
+}
+
+.ux-page button,
+.ux-page input,
+.ux-page select {
+    font: inherit
+}
+
+.ux-wrap {
+    width: min(100% - 56px, 1320px);
+    margin: auto
+}
+
+.ux-kicker {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #f08a2e;
+    text-transform: uppercase
+}
+
+.ux-hero {
+    background: #111216;
+    color: white;
+    padding: 74px 0;
+    position: relative;
+    overflow: hidden
+}
+
+.ux-hero h1 {
+    font-size: clamp(34px, 4.8vw, 62px);
+    letter-spacing: -2px;
+    line-height: 1.12;
+    margin: 15px 0
+}
+
+.ux-hero p {
+    color: #c7c8cd;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 620px
+}
+
+.ux-hero-content {
+    position: relative;
+    z-index: 1
+}
+
+.ux-crumb {
+    font-size: 12px;
+    color: #8b9098;
+    margin: 27px 0
+}
+
+.ux-crumb a {
+    color: #696f78
+}
+
+.ux-heading {
+    font-size: clamp(24px, 2.8vw, 36px);
+    letter-spacing: -1px;
+    margin: 8px 0 12px
+}
+
+.ux-lead {
+    font-size: 13px;
+    color: #7b818b;
+    line-height: 1.75
+}
+
+.ux-chip {
+    border: 1px solid #e2e4e8;
+    background: white;
+    border-radius: 999px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    color: #42454c
+}
+
+.ux-chip.active {
+    background: #16171b;
+    color: #ffab62;
+    border-color: #16171b
+}
+
+.ux-price {
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+    color: #16171b
+}
+
+.ux-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #16171b;
+    color: white;
+    padding: 13px 17px;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 800
+}
+
+.ux-link:hover {
+    background: #f28b2e;
+    color: #151515
+}
+
+.ux-empty {
+    background: #fff;
+    border: 1px dashed #d7dae0;
+    border-radius: 14px;
+    padding: 45px;
+    text-align: center;
+    color: #777
+}
+
+.ux-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 9px 25px #14171e08
+}
+
+.ux-card img {
+    display: block;
+    width: 100%;
+    object-fit: cover
+}
+
+.ux-meta {
+    font-size: 12px;
+    color: #828791;
+    display: flex;
+    gap: 6px;
+    align-items: center
+}
+
+.ux-meta svg {
+    color: #ed8b33
+}
+
+.ux-footer-cta {
+    background: #17181c;
+    color: #fff;
+    padding: 42px 0;
+    margin-top: 80px
+}
+
+.ux-footer-cta .ux-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.ux-footer-cta h2 {
+    margin: 0 0 8px;
+    font-size: 26px
+}
+
+.ux-footer-cta p {
+    margin: 0;
+    color: #c4c6cc;
+    font-size: 13px
+}
+
+.ux-footer-cta a {
+    background: #ff8a1e;
+    color: #151515;
+    padding: 14px 20px;
+    border-radius: 9px;
+    font-weight: 800;
+    font-size: 12px
+}
+
+@media(max-width:750px) {
+    .ux-wrap {
+        width: calc(100% - 32px)
+    }
+
+    .ux-hero {
+        padding: 52px 0
+    }
+
+    .ux-hero h1 {
+        letter-spacing: -1px
+    }
+
+    .ux-footer-cta .ux-wrap {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .ux-footer-cta a {
+        width: 100%;
+        text-align: center
+    }
+}
+
+.np-hero {
+    background: linear-gradient(90deg, #0b0c0fe8, #0b0c0f80), url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85") center/cover;
+    padding: 100px 0
+}
+
+.np-hero h1 em {
+    font-style: normal;
+    color: #ff9a41
+}
+
+.np-hero-action {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    background: #ff8a1e;
+    color: #151515;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 20px
+}
+
+.np-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 45px 0 25px
+}
+
+.np-count {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ef8a2e;
+    white-space: nowrap
+}
+
+.np-count small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #777;
+    text-align: center
+}
+
+.np-feature {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    background: #17181c;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    min-height: 400px
+}
+
+.np-feature>img {
+    width: 100%;
+    height: 100%;
+    max-height: 490px;
+    object-fit: cover
+}
+
+.np-feature-copy {
+    padding: clamp(25px, 4vw, 55px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px
+}
+
+.np-feature-copy h2 {
+    font-size: clamp(25px, 3vw, 40px);
+    letter-spacing: -1px;
+    margin: 0
+}
+
+.np-feature-copy>p {
+    color: #c6c8ce;
+    line-height: 1.8;
+    font-size: 13px
+}
+
+.np-feature-copy .ux-price {
+    color: #fff
+}
+
+.np-feature-copy .ux-link {
+    background: #ff8a1e;
+    color: #111
+}
+
+.np-launches {
+    padding: 78px 0
+}
+
+.np-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+    margin-bottom: 25px
+}
+
+.np-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+.np-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px
+}
+
+.np-photo {
+    position: relative;
+    height: 235px
+}
+
+.np-photo img {
+    height: 100%
+}
+
+.np-photo>span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #18191d;
+    color: #ffad68;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 800
+}
+
+.np-card-copy {
+    padding: 22px
+}
+
+.np-card-index {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    color: #e6852b;
+    font-weight: 800
+}
+
+.np-card h3 {
+    font-size: 19px;
+    margin: 10px 0
+}
+
+.np-facts {
+    display: flex;
+    gap: 16px;
+    font-size: 11px;
+    color: #777d87;
+    border-bottom: 1px solid #eee;
+    padding: 17px 0
+}
+
+.np-facts span {
+    display: flex;
+    gap: 5px;
+    align-items: center
+}
+
+.np-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px
+}
+
+.np-card-bottom strong {
+    font-size: 20px
+}
+
+.np-card-bottom a {
+    display: grid;
+    place-items: center;
+    background: #18191c;
+    color: white;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%
+}
+
+.np-story {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 28px
+}
+
+.np-story>svg {
+    color: #ef8a2e;
+    flex-shrink: 0
+}
+
+.np-story>div {
+    flex: 1
+}
+
+.np-story h3 {
+    margin: 0 0 7px
+}
+
+.np-story p {
+    font-size: 12px;
+    color: #777;
+    margin: 0
+}
+
+@media(max-width:1050px) {
+    .np-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .np-toolbar {
+        align-items: start;
+        flex-direction: column
+    }
+}
+
+@media(max-width:750px) {
+    .np-feature {
+        grid-template-columns: 1fr
+    }
+
+    .np-feature>img {
+        height: 250px
+    }
+
+    .np-intro {
+        align-items: start
+    }
+
+    .np-grid {
+        grid-template-columns: 1fr
+    }
+
+    .np-story {
+        align-items: start;
+        flex-direction: column
+    }
+
+    .np-story .ux-link {
+        width: 100%
+    }
+
+    .np-count {
+        font-size: 34px
+    }
+
+    .np-hero {
+        padding: 65px 0
+    }
+}
+
+/* =========================================
+   NEW PROPERTIES - WISHLIST & COMPARE
+========================================= */
+
+.np-page .up-action-image {
+  position: relative;
+}
+
+.np-page .up-property-actions {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.np-page .up-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #171717;
+
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.np-page .up-action-btn:hover {
+  background: #ff891c;
+  border-color: #ff891c;
+  color: #111111;
+  transform: scale(1.08);
+}
+
+.np-page .up-action-btn.is-active {
+  background: #ff891c;
+  border-color: #ff891c;
+  color: #111111;
+}
+
+.np-page .up-action-btn:focus-visible {
+  outline: 2px solid #ff891c;
+  outline-offset: 3px;
+}
+
+/* Featured property image */
+.np-page .np-feature .up-action-image {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.np-page .np-feature .up-action-image > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Property card image */
+.np-page .np-photo .up-property-actions {
+  z-index: 10;
+}
+
+/* Compare limit message */
+.np-page .up-action-message {
+  margin: 14px 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 137, 28, 0.35);
+  border-radius: 8px;
+  background: #fff4e8;
+  color: #9a4800;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .np-page .up-property-actions {
+    top: 10px;
+    right: 10px;
+    gap: 7px;
+  }
+
+  .np-page .up-action-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .np-page .up-action-btn svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .np-page .up-action-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .np-page .up-action-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
